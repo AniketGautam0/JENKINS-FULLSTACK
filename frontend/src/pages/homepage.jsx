@@ -26,7 +26,7 @@ const HomePage = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   useEffect(() => {
-    fetch("/api/admins")
+    fetch("/api/admins/")
       .then((res) => res.json())
       .then((data) => console.log("Admin data:", data))
       .catch((err) => console.error(err));
